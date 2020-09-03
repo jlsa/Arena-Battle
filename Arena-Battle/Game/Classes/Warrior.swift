@@ -1,7 +1,7 @@
 class Warrior: Fighter {
-    var rage: Int = 0
+    var rage: Float = 0
     
-    init(name: String, health: Int, maxAttackPower: Int, maxBlock: Int, rage: Int) {
+    init(name: String, health: Float, maxAttackPower: Float, maxBlock: Float, rage: Float) {
         super.init(name, health, maxAttackPower, maxBlock)
         self.rage = rage
     }

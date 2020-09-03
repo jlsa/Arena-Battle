@@ -1,3 +1,3 @@
 protocol Attackable {
-    func Attack() -> Int
+    func Attack() -> Float
 }

@@ -16,12 +16,7 @@ class Battle {
     
     static func GetFightResult(_ fighterOne: Fighter, _ fighterTwo: Fighter) -> FightState {
         
-//        let fighterOneAttack: Int = fighterOne.Attack()
-////        print(fighterOneAttack)
-//        let fighterTwoBlock: Int = fighterTwo.Attack()
-////        print(fighterTwoBlock)
-        
-        var damageDoneToOpponent: Int = fighterOne.Attack() - fighterTwo.Block()
+        var damageDoneToOpponent: Float = fighterOne.Attack() - fighterTwo.Block()
         
         damageDoneToOpponent = damageDoneToOpponent <= 0 ? 0 : damageDoneToOpponent
         

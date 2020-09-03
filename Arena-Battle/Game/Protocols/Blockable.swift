@@ -1,3 +1,3 @@
 protocol Blockable {
-    func Block() -> Int
+    func Block() -> Float
 }

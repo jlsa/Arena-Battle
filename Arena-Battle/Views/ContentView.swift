@@ -82,13 +82,6 @@ struct ContentView: View {
     
     var body: some View {
         FightView()
-//        VStack {
-//            ActivityIndicator()
-//                .frame(width: 50, height: 50)
-//                .foregroundColor(Color.orange)
-//            Indicator()
-//        }
-//        .padding()
     }
 }
 

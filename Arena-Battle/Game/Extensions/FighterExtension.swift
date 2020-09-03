@@ -1,9 +1,9 @@
 extension Fighter: Attackable, Blockable {
-    func Attack() -> Int {
+    func Attack() -> Float {
         return attack()
     }
     
-    func Block() -> Int {
+    func Block() -> Float {
         return block()
     }
 }
