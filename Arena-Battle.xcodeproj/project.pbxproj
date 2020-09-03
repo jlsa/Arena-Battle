@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540871A525001F3200B5DD66 /* Assassin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540871A425001F3200B5DD66 /* Assassin.swift */; };
 		540FF22B24FFA68400D99014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF22A24FFA68400D99014 /* AppDelegate.swift */; };
 		540FF22D24FFA68400D99014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF22C24FFA68400D99014 /* SceneDelegate.swift */; };
 		540FF23024FFA68400D99014 /* Arena_Battle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 540FF22E24FFA68400D99014 /* Arena_Battle.xcdatamodeld */; };
@@ -16,6 +17,18 @@
 		540FF23A24FFA68600D99014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540FF23824FFA68600D99014 /* LaunchScreen.storyboard */; };
 		540FF24524FFA68600D99014 /* Arena_BattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF24424FFA68600D99014 /* Arena_BattleTests.swift */; };
 		540FF25024FFA68600D99014 /* Arena_BattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF24F24FFA68600D99014 /* Arena_BattleUITests.swift */; };
+		540FF26124FFA7ED00D99014 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26024FFA7ED00D99014 /* Fighter.swift */; };
+		540FF26424FFA95400D99014 /* FighterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26324FFA95400D99014 /* FighterExtension.swift */; };
+		540FF26724FFA9A200D99014 /* Attackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26624FFA9A200D99014 /* Attackable.swift */; };
+		540FF26924FFA9C200D99014 /* Blockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26824FFA9C200D99014 /* Blockable.swift */; };
+		540FF26B24FFAAD700D99014 /* FighterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26A24FFAAD700D99014 /* FighterNames.swift */; };
+		540FF26E24FFE77900D99014 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26D24FFE77900D99014 /* Warrior.swift */; };
+		540FF27024FFE7A000D99014 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF26F24FFE7A000D99014 /* Mage.swift */; };
+		540FF27224FFEB1500D99014 /* FighterDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF27124FFEB1500D99014 /* FighterDisplayView.swift */; };
+		540FF274250003E200D99014 /* FightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF273250003E200D99014 /* FightView.swift */; };
+		540FF2772500114D00D99014 /* FightResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF2762500114D00D99014 /* FightResult.swift */; };
+		540FF279250011C800D99014 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF278250011C800D99014 /* Battle.swift */; };
+		540FF27B2500175C00D99014 /* FightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF27A2500175C00D99014 /* FightState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540871A425001F3200B5DD66 /* Assassin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assassin.swift; sourceTree = "<group>"; };
 		540FF22724FFA68400D99014 /* Arena-Battle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arena-Battle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		540FF22A24FFA68400D99014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540FF22C24FFA68400D99014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,18 @@
 		540FF24B24FFA68600D99014 /* Arena-BattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arena-BattleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		540FF24F24FFA68600D99014 /* Arena_BattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arena_BattleUITests.swift; sourceTree = "<group>"; };
 		540FF25124FFA68600D99014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540FF26024FFA7ED00D99014 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		540FF26324FFA95400D99014 /* FighterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterExtension.swift; sourceTree = "<group>"; };
+		540FF26624FFA9A200D99014 /* Attackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attackable.swift; sourceTree = "<group>"; };
+		540FF26824FFA9C200D99014 /* Blockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockable.swift; sourceTree = "<group>"; };
+		540FF26A24FFAAD700D99014 /* FighterNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterNames.swift; sourceTree = "<group>"; };
+		540FF26D24FFE77900D99014 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		540FF26F24FFE7A000D99014 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		540FF27124FFEB1500D99014 /* FighterDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterDisplayView.swift; sourceTree = "<group>"; };
+		540FF273250003E200D99014 /* FightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightView.swift; sourceTree = "<group>"; };
+		540FF2762500114D00D99014 /* FightResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightResult.swift; sourceTree = "<group>"; };
+		540FF278250011C800D99014 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		540FF27A2500175C00D99014 /* FightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +127,9 @@
 		540FF22924FFA68400D99014 /* Arena-Battle */ = {
 			isa = PBXGroup;
 			children = (
-				540FF22A24FFA68400D99014 /* AppDelegate.swift */,
-				540FF22C24FFA68400D99014 /* SceneDelegate.swift */,
-				540FF23124FFA68400D99014 /* ContentView.swift */,
+				540FF25F24FFA7C600D99014 /* Game */,
+				540FF25D24FFA6F500D99014 /* App Delegates */,
+				540FF25E24FFA76300D99014 /* Views */,
 				540FF23324FFA68600D99014 /* Assets.xcassets */,
 				540FF23824FFA68600D99014 /* LaunchScreen.storyboard */,
 				540FF23B24FFA68600D99014 /* Info.plist */,
@@ -137,6 +163,75 @@
 				540FF25124FFA68600D99014 /* Info.plist */,
 			);
 			path = "Arena-BattleUITests";
+			sourceTree = "<group>";
+		};
+		540FF25D24FFA6F500D99014 /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				540FF22A24FFA68400D99014 /* AppDelegate.swift */,
+				540FF22C24FFA68400D99014 /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		540FF25E24FFA76300D99014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				540FF273250003E200D99014 /* FightView.swift */,
+				540FF23124FFA68400D99014 /* ContentView.swift */,
+				540FF27124FFEB1500D99014 /* FighterDisplayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		540FF25F24FFA7C600D99014 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				540FF275250010D200D99014 /* Fight */,
+				540FF26C24FFE73D00D99014 /* Classes */,
+				540FF26524FFA98D00D99014 /* Protocols */,
+				540FF26224FFA94000D99014 /* Extensions */,
+				540FF26024FFA7ED00D99014 /* Fighter.swift */,
+				540FF26A24FFAAD700D99014 /* FighterNames.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		540FF26224FFA94000D99014 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				540FF26324FFA95400D99014 /* FighterExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		540FF26524FFA98D00D99014 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				540FF26624FFA9A200D99014 /* Attackable.swift */,
+				540FF26824FFA9C200D99014 /* Blockable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		540FF26C24FFE73D00D99014 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				540FF26D24FFE77900D99014 /* Warrior.swift */,
+				540FF26F24FFE7A000D99014 /* Mage.swift */,
+				540871A425001F3200B5DD66 /* Assassin.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		540FF275250010D200D99014 /* Fight */ = {
+			isa = PBXGroup;
+			children = (
+				540FF2762500114D00D99014 /* FightResult.swift */,
+				540FF278250011C800D99014 /* Battle.swift */,
+				540FF27A2500175C00D99014 /* FightState.swift */,
+			);
+			path = Fight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +365,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540FF274250003E200D99014 /* FightView.swift in Sources */,
 				540FF22B24FFA68400D99014 /* AppDelegate.swift in Sources */,
+				540FF26924FFA9C200D99014 /* Blockable.swift in Sources */,
+				540FF26B24FFAAD700D99014 /* FighterNames.swift in Sources */,
+				540FF26424FFA95400D99014 /* FighterExtension.swift in Sources */,
+				540FF2772500114D00D99014 /* FightResult.swift in Sources */,
+				540FF279250011C800D99014 /* Battle.swift in Sources */,
+				540FF26124FFA7ED00D99014 /* Fighter.swift in Sources */,
+				540FF27224FFEB1500D99014 /* FighterDisplayView.swift in Sources */,
+				540FF26724FFA9A200D99014 /* Attackable.swift in Sources */,
+				540FF26E24FFE77900D99014 /* Warrior.swift in Sources */,
+				540FF27024FFE7A000D99014 /* Mage.swift in Sources */,
 				540FF23024FFA68400D99014 /* Arena_Battle.xcdatamodeld in Sources */,
 				540FF23224FFA68400D99014 /* ContentView.swift in Sources */,
+				540FF27B2500175C00D99014 /* FightState.swift in Sources */,
+				540871A525001F3200B5DD66 /* Assassin.swift in Sources */,
 				540FF22D24FFA68400D99014 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
