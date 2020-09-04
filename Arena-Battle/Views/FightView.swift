@@ -6,40 +6,12 @@ enum FighterCardState {
     case Default
 }
 
-struct ProgressBar: View {
-    @Binding var value: Float
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                Rectangle().frame(width: geometry.size.width, height: geometry.size.height)
-                    .opacity(0.3)
-                    .foregroundColor(Color(UIColor.systemTeal))
-                
-                Rectangle().frame(width: min(CGFloat(self.value) * geometry.size.width, geometry.size.width), height: geometry.size.height)
-                    .foregroundColor(Color(UIColor.systemBlue))
-                    .animation(.linear)
-            }
-            .cornerRadius(45.0)
-        }
-    }
-}
 
-struct HealthBar: View {
-    @State var progressValue: Float = 0.0
-    
-    var body: some View {
-        ZStack {
-            ProgressBar(value: $progressValue).frame(width: 80, height: 20)
-        }
-    }
-}
 
 struct FighterCard: View {
-    
-    var fighter: Fighter
+    @Binding var fighter: Fighter
     var fighterCardState: FighterCardState
-    @State var progressValue: Float = 0.0
+    @State var progressValue: Float = 1.0
     
     var body: some View {
         ZStack {
@@ -55,6 +27,8 @@ struct FighterCard: View {
                     
                     Button(action: {
                         print("Lala")
+                        print((1 / self.fighter.startHealth * self.fighter.health))
+                        self.progressValue = (1 / self.fighter.startHealth * self.fighter.health)
                     }) {
                         Circle()
                             .frame(width: 20, height: 20)
@@ -92,12 +66,12 @@ struct FighterCard: View {
 
 struct FightView: View {
     
-    let left: Fighter = Warrior(name: "Duncan",
+    @State var left: Fighter = Warrior(name: FighterInfo.RandomName(gender: .Male).name,
                                 health: 80,
                                 maxAttackPower: 26,
                                 maxBlock: 10,
                                 rage: 0)
-    let right: Fighter = Assassin(name: "Bellatrix",
+    @State var right: Fighter = Assassin(name: FighterInfo.RandomName(gender: .Female).name,
                                   health: 50,
                                   maxAttackPower: 18,
                                   maxBlock: 8,
@@ -112,10 +86,10 @@ struct FightView: View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
                 HStack {
-                    FighterCard(fighter: self.left,
+                    FighterCard(fighter: self.$left,
                                 fighterCardState: self.fightResult?.loser === self.left ? .Loss : .Default)
                     
-                    FighterCard(fighter: self.right,
+                    FighterCard(fighter: self.$right,
                                 fighterCardState: self.fightResult?.loser === self.right ? .Loss : .Default)
                 }
                 
@@ -124,11 +98,20 @@ struct FightView: View {
                 if self.fightResult == nil {
                     HStack {
                         Button(action: {
+//                            let fightResult: FightResult = FightResult(winner: self.left, loser: self.right)
+//                            let fightState = Battle.GetFightState(self.left, self.right)
+//                            print(self.left.health)
+//                            print(self.right.health)
                             self.fightResult = self.battle.Fight(self.left, self.right)
+                            self.left = self.fightResult.winner === self.left ? self.fightResult.winner : self.fightResult.loser
                             
+                            self.right = self.fightResult.winner === self.right ? self.fightResult.winner : self.fightResult.loser
+                            
+//                            print("health of winner: \(self.fightResult.winner.health)")
                             print("Winner: \(self.fightResult.winner.name), Loser: \(self.fightResult.loser.name)")
                         }) {
                             Text("Fight")
+                                .padding()
                         }
                     }
                 } else {
@@ -137,6 +120,7 @@ struct FightView: View {
                             self.fightResult = nil
                         }) {
                             Text("Reset")
+                                .padding()
                         }
                     }
                 }

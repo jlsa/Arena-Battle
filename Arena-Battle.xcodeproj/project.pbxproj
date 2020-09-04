@@ -29,6 +29,7 @@
 		540FF2772500114D00D99014 /* FightResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF2762500114D00D99014 /* FightResult.swift */; };
 		540FF279250011C800D99014 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF278250011C800D99014 /* Battle.swift */; };
 		540FF27B2500175C00D99014 /* FightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF27A2500175C00D99014 /* FightState.swift */; };
+		543AC70925022CD200F8E57B /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AC70825022CD200F8E57B /* HealthBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		540FF2762500114D00D99014 /* FightResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightResult.swift; sourceTree = "<group>"; };
 		540FF278250011C800D99014 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
 		540FF27A2500175C00D99014 /* FightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightState.swift; sourceTree = "<group>"; };
+		543AC70825022CD200F8E57B /* HealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				540FF273250003E200D99014 /* FightView.swift */,
 				540FF23124FFA68400D99014 /* ContentView.swift */,
 				540FF27124FFEB1500D99014 /* FighterDisplayView.swift */,
+				543AC70825022CD200F8E57B /* HealthBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540FF274250003E200D99014 /* FightView.swift in Sources */,
+				543AC70925022CD200F8E57B /* HealthBar.swift in Sources */,
 				540FF22B24FFA68400D99014 /* AppDelegate.swift in Sources */,
 				540FF26924FFA9C200D99014 /* Blockable.swift in Sources */,
 				540FF26B24FFAAD700D99014 /* FighterNames.swift in Sources */,

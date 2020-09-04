@@ -4,17 +4,17 @@ class Battle {
         fighter2.health = fighter2.startHealth
         
         while true {
-            if (Battle.GetFightResult(fighter1, fighter2) == .Done) {
+            if (Battle.GetFightState(fighter1, fighter2) == .Done) {
                 return FightResult(winner: fighter1, loser: fighter2)
             }
 
-            if (Battle.GetFightResult(fighter2, fighter1) == .Done) {
+            if (Battle.GetFightState(fighter2, fighter1) == .Done) {
                 return FightResult(winner: fighter2, loser: fighter1)
             }
         }
     }
     
-    static func GetFightResult(_ fighterOne: Fighter, _ fighterTwo: Fighter) -> FightState {
+    static func GetFightState(_ fighterOne: Fighter, _ fighterTwo: Fighter) -> FightState {
         
         var damageDoneToOpponent: Float = fighterOne.Attack() - fighterTwo.Block()
         
